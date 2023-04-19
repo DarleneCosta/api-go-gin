@@ -14,6 +14,6 @@ func HandleRequests() {
 	r.GET("/:nome", controllers.Saudacao)
 	r.POST("/alunos", controllers.CriaNovoAluno)
 	r.DELETE("/alunos/:id", controllers.DeletaAluno)
-	r.PATCH("/alunos/:id", controllers.EditaAluno)
+	r.PATCH("/alunos/:id", controllers.EditarAluno)
 	r.Run(":8000")
 }
